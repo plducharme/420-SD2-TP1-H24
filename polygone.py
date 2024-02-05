@@ -30,11 +30,11 @@ class Polygone(ABC):
         # Ajouter l'implémentation de la méthode nb_cotes(self)
         pass
 
+    # Ne pas modifier cette méthode
     def afficher_forme(self):
-        points = []
+        points = list[tuple[float]]
         for vecteur in self._liste_vecteurs:
-            points.append((vecteur.point_depart.x, vecteur.point_depart.y))
-        print("Affichage de " + str(points))
+            points.append((vecteur.point_depart().x(), vecteur.point_depart().y()))
         polygon = Polygon(points)
         fig = plt.figure()
         ax = fig.gca()

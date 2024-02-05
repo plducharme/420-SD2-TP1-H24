@@ -1,5 +1,7 @@
 import csv
 # Arbre binaire de recherche
+
+
 class Noeud:
 
     def __init__(self, equipe):
@@ -90,7 +92,7 @@ class DataUtils:
             lignes = 0
             for ligne in reader:
                 if lignes == 0:
-                    print("Ignorer l'entete")
+                    # Ignorer l'entete
                     lignes += 1
                 else:
                     equipe = EquipeLNH(ligne[0], {'MJ': ligne[2], 'V': ligne[3], 'DP': ligne[6], 'BP': ligne[12]})
@@ -99,7 +101,7 @@ class DataUtils:
             return liste_equipes
 
     @staticmethod
-    def moyenne_haut_bas(liste_equipes):
+    def moyenne_haut_bas(liste_equipes_lnh):
         # Implémenter la méthode
         bas = ()
         haut = ()

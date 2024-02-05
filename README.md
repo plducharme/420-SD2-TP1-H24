@@ -1,26 +1,26 @@
-# PythonTP1
-Travail Pratique 1 du cours de programmation orientée objet Hiver 2023
+# Travail Pratique 1 - Polygones et Classement
+Travail Pratique 1 du cours de programmation orientée objet Hiver 2024
 
 ## Introduction
+Le but du travail pratique est d'utiliser les notions de programmation orientée objet ainsi que l'utilisation de
+structures de données de base
 
 ## Prérequis
-1) cloner le dépôt
-2) installer lìnterpreter (venvironnement)
-3) installer le package matplotlib
-   1) PyCharm: View -> Tool Windows -> Python Packages
+1) Configurer l'interpréteur (virtual environnement)
+2) installer le package matplotlib
+   1) PyCharm: View -> Tool Windows -> Python Packages ou utiliser la vue package en bas à gauche
    2) Rechercher matplotlib (pas de 'h' à mat)
-   ![matplotlib](./images/matplotlib.PNG)
    3) cliquer "install package"
-   ![install package](./images/installpkg.PNG)
+   ![Pycharm installation Package](./images/pycharmpkg.png)
 
 
 ## Exercices
 
-### Implémenter des polygones (10 points)
+### Implémenter des polygones (8 points)
 La classe abstraite Polygone vous est fournie dans le fichier polygone.py
- - la classe déclare une liste de vecteurs (_liste_vecteur) qui contient des Vecteur
+ - la classe déclare une liste de vecteurs (_liste_vecteur) qui contient des items de type Vecteur
  - les vecteurs sont définis par la classe Vecteur
- - les vecteurs ont un point de départ (_point_depart) et d'arrivée (_point_arrivee)
+   - les vecteurs ont un point de départ (_point_depart) et d'arrivée (_point_arrivee) de type Point
  - la classe Point défini un point _x,_y
 1) Implémenter la méthode perimetre(self) de la classe Polygone
    1) la méthode doit retourner le périmètre du polygone
@@ -43,10 +43,10 @@ Notes:
 - Vous pouvez utiliser les bibliothèques standard de Python qui ne nécessitent aucune installation
 - Astuce: le module "math" peut vous être utile
 - Vous pouvez aussi utiliser les modules provenant du package "matplotlib"
-- Vous devez créer vous-même les vecteurs pour les formes pour tester
+- Vous devez créer vous-même les listes de vecteurs pour les formes à tester
 
-### Utilisation des structures de données (10 points)
-Le fichier arbrebinaire.py contient les classes suivantes:
+### Utilisation des structures de données (7 points)
+Le fichier arbrebinaire.py contient les classes suivantes :
 - Noeud: Permet d'implémenter un arbre binaire de recherche
 - EquipeLNH: Permet d'instancier une équipe de hockey de la LNH
   + La variable __nom contient le nom de l'équipe
@@ -73,16 +73,18 @@ Le fichier arbrebinaire.py contient les classes suivantes:
 4) Implémenter la méthode statique moyenne_bas_haut(liste_equipes) de la classe DataUtils
    + Prend en entrée la liste d'équipe
    + Doit retourner 2 tuples, bas et haut
-   + bas contient les équipes (objets EquipeLHN) dont la moyenne de buts par match est plus petite que la moyenne de tout les équipes
-   + haut contient les équipes (objets EquipeLNH) dont la moyenne de buts par match est égale ou supérieurs à la moyenne de tout les équipes
+   + bas contient les équipes (objets EquipeLHN) dont la moyenne de buts par match est plus petite que la moyenne de
+toutes les équipes
+   + haut contient les équipes (objets EquipeLNH) dont la moyenne de buts par match est égale ou supérieure à la moyenne
+de toutes les équipes
 
 
 ## Critères d'évaluation
 
    - Respect de l'encapsulation
-   - Fonctionnalité du code, résultat des tests
-   - Respect des conventions Python
+   - Fonctionnalité du code
+   - Respect des conventions Python (PEPs)
    - Présence de commentaires explicatifs du code
 
 ## Bugs
-Me contacter par MIO si vous trouvez des bugs
+Me contacter par MIO si vous trouvez des bugs dans le code donné
