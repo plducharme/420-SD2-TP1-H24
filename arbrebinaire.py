@@ -25,11 +25,9 @@ class Noeud:
     def droite(self, valeur):
         self._droite = valeur
 
-
     def insertion(self, equipe):
         # Ajouter l'implémentation d'insertion(self, equipe)
         pass
-
 
     # Afficher l'arbre
     def afficher_arbre(self):
@@ -107,6 +105,7 @@ class DataUtils:
         haut = ()
         return bas, haut
 
+
 # Code pour tester
 racine = None
 liste_equipes = DataUtils.load_data('./data/nhl.csv')
@@ -126,4 +125,3 @@ for equipe in bas:
 print('Au dessus de la moyenne BP/MJ')
 for equipe in haut:
     equipe.afficher()
-

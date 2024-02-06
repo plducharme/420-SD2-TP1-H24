@@ -31,10 +31,11 @@ class Polygone(ABC):
         pass
 
     # Ne pas modifier cette méthode
+    # Méthode qui utilise la liste de vecteurs pour construire un matplotlib.Polygon et l'afficher en utilisant pyplot
     def afficher_forme(self):
-        points = list[tuple[float]]
+        points = []
         for vecteur in self._liste_vecteurs:
-            points.append((vecteur.point_depart().x(), vecteur.point_depart().y()))
+            points.append((vecteur.point_depart.x, vecteur.point_depart.y))
         polygon = Polygon(points)
         fig = plt.figure()
         ax = fig.gca()
@@ -78,16 +79,16 @@ class Vecteur:
         return self._point_depart
 
     @point_depart.setter
-    def point_depart(self, valeur):
-        self._point_depart = valeur
+    def point_depart(self, point):
+        self._point_depart = point
 
     @property
     def point_arrivee(self):
         return self._point_arrivee
 
     @point_arrivee.setter
-    def point_arrivee(self, valeur):
-        self._point_arrivee = valeur
+    def point_arrivee(self, point):
+        self._point_arrivee = point
 
     def longueur(self):
         # Ajouter l'implémentation de la méthode
