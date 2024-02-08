@@ -2,6 +2,11 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 from abc import ABC, abstractmethod
 
+# <NOM> (utilisateur github)
+#
+#
+#
+
 
 class Polygone(ABC):
 
@@ -93,4 +98,3 @@ class Vecteur:
     def longueur(self):
         # Ajouter l'implémentation de la méthode
         pass
-
