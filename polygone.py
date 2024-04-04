@@ -98,3 +98,4 @@ class Vecteur:
     def longueur(self):
         # Ajouter l'implémentation de la méthode
         pass
+
